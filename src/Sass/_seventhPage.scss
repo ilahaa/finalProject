@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Heebo:wght@100&family=Lato:wght@100;300&family=Pacifico&family=Playfair+Display:ital@1&family=Plus+Jakarta+Sans:wght@200;400&family=Poppins:wght@100;200&family=Prata&display=swap');
+
+.seventhPage{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    h3{
+        font-family: "Cataraman", sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.4em;
+    }
+    p{
+        font-family: "Cataraman", sans-serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.5em;
+        color: rgb(78, 77, 77);
+    }
+    i{
+        color: #e46a4b;
+        margin-bottom: 25px;
+    }
+    .firstBox{
+        width: 363px;
+        height: 371px;
+        background-color: #F7F7F7;
+        border-radius: 100px 0 100px 0;
+    }
+    .secondBox{
+        background-color: #e7eeef;
+        border-radius: 0 0 100px 0;
+       
+    }
+    .pics{
+    .ovalWhite{
+        position: relative;
+        top: 130px;
+        left: 130px;
+    }
+    .pathDots{
+        position: relative;
+        top: 120px;
+        left: 20px;
+    }
+}
+}
+
+.light{
+    .seventhPage{
+        background-color: #f4dbf3;
+    }
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width:600px){
+    .seventhPage{
+        height: auto;
+        .firstBox{
+            height: 250px;
+        }
+        .secondBox{
+            width: 363px;
+            height: 250px;
+            background-color: #e7eeef;
+            border-radius: 100px 0 100px 0;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        h3{
+            font-size: 15px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+}

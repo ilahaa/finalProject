@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Heebo:wght@100&family=Lato:wght@100;300&family=Playfair+Display:ital@1&family=Plus+Jakarta+Sans:wght@200;400&family=Poppins:wght@100;200&family=Prata&display=swap');
+
+.ThirdPage {
+    width: 100%;
+    height: 150vh;
+    background-color: #F7F7F7;
+    
+    .ThirdPageItems {
+        width: 100%;
+        height: 100%;
+
+        .firstItem {
+            background-image: url(../Pages/Images/shape-left.svg);
+            background-repeat: no-repeat;
+            margin-top: 100px;
+
+            .my-con {
+                margin-bottom: 200px;
+            }
+
+            h6 {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+
+            h2 {
+                width: 70%;
+                color: #0a1e33;
+                font-family: 'Catamaran', sans-serif;
+                line-height: 1.2em;
+                letter-spacing: 1px;
+            }
+
+            p {
+                width: 80%;
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.5em;
+            }
+
+
+        }
+
+        .scndItem {
+            .firstImg {
+                position: absolute;
+                border-radius: 6px;
+            }
+
+            .scndImg {
+                position: relative;
+                border-radius: 6px;
+                top: 260px;
+                right: 200px;
+            }
+        }
+
+        .thirdItem {
+            background-image: url(../Pages/Images/Group-26.svg);
+            background-repeat: no-repeat;
+            background-position: right bottom;
+
+            .my-con-2 {
+                margin-top: 450px;
+                margin-left: 30px;
+                text-align: left;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+                line-height: 1.5em;
+            }
+        }
+    }
+}
+
+
+.topImg {
+    width: 100%;
+    height: 10vh;
+    background-image: url(../Pages/Images/wave-3.svg);
+    filter: opacity(0.35) drop-shadow(5px 5px 10px #F7F7F7);
+}
+
+.light {
+    .topImg {
+        width: 100%;
+        height: 10vh;
+        background-image: url(../Pages/Images/wave-3.svg);
+        filter: opacity(0.35) drop-shadow(0px 0px 0px #df8ede);
+    }
+
+    .ThirdPage {
+        background-color: #EBD1ED;
+    }
+}
+
+// RESPONSIVE
+
+@media only screen and (max-width: 600px){
+    .ThirdPage{
+        height: auto;
+    
+    .firstImg{
+        width: 350px;
+        height: 450px;
+    }
+    .scndImg{
+        opacity: 0;
+    }
+    .thirdItem{
+        p{
+        margin-bottom: 300px;
+        }
+    }
+}
+}

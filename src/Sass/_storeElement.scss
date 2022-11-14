@@ -1,0 +1,41 @@
+.storeElement{
+    .item{
+        display: flex;
+        align-items: center;
+        width: 260px;
+        height: 400px;
+        border: 1px solid #dfe7e8;
+        border-radius: 6px;
+    }
+    .storeImg{
+        img{
+            border-radius: 6px;
+        }
+        .addtoCart{
+            cursor: pointer;
+            position: absolute;
+            margin-left: 20px;
+            width: 220px;
+            height: 45px;
+            background-color: #e46a4b;
+            color: #fff;
+            border-radius: 6px;
+            font-family: "Cataraman", sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            opacity: 0;
+            transition: .8s;
+            transform: translateY(-50%);
+            &:hover{
+                background-color: #0a1e33;
+            }
+        } 
+        &:hover{
+            .addtoCart{
+                transition: .8s;
+                opacity: 1;
+                transform: translateY(-130%);
+            }
+        }
+    }
+}

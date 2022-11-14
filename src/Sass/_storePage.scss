@@ -1,0 +1,38 @@
+.storePage{
+    width: 100%;
+    height: auto;
+    margin-top: 150px;
+    overflow: hidden;
+    font-family: "Catamaran", sans-serif;
+    color: #0a1e33;
+    .stateComponents{
+        cursor: pointer;
+        ul{
+            li{
+                list-style: none;
+            }
+        }
+    }
+    .storeElements{
+        h1{
+            text-align: center;
+        }
+    }
+    
+}
+
+// RESPONSIVE
+@media only screen and(max-width:600px){
+    .storePage{
+        .stateComponents{
+            width: 90%;
+        }
+       .storeElements{
+        width: 100%;
+        .storeProducts{
+            width: 100%;
+            margin-left: 100px;
+        }
+       }
+    }
+}

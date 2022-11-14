@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Heebo:wght@100&family=Lato:wght@100;300&family=Playfair+Display:ital@1&family=Plus+Jakarta+Sans:wght@200;400&family=Poppins:wght@100;200&family=Prata&display=swap');
+
+.aboutUsPage {
+    width: 100%;
+    font-family: "Catamaran", sans-serif;
+    overflow: hidden;
+
+    .firstPartAbout {
+        width: 100%;
+        height: 100vh;
+        background-color: #f7f7f7;
+
+        .firstPartTexts {
+            color: #0a1e33;
+            position: absolute;
+
+            h1 {
+                font-size: 52px;
+                font-weight: 800;
+                line-height: 1em;
+            }
+
+            h4 {
+                font-size: 18px;
+                font-weight: bold;
+                line-height: 1.4em;
+            }
+        }
+
+        .lion {
+            position: relative;
+            left: -400px;
+            top: -20px;
+        }
+
+        .giraffe {
+            position: relative;
+            right: -400px;
+            top: 180px;
+        }
+    }
+
+    .secondPartAbout {
+        width: 100%;
+        height: 100vh;
+
+        .secondPartImages {
+            .mainImg {
+                position: absolute;
+                border-radius: 6px;
+            }
+
+            .pathImg {
+                position: relative;
+                top: 240px;
+                right: 100px;
+            }
+        }
+
+        .secondPartTexts {
+            .txts {
+                position: absolute;
+
+                h2 {
+                    font-size: 36px;
+                    font-weight: bold;
+                    line-height: 1.2em;
+                }
+
+                p {
+                    width: 80%;
+                    font-family: 'Times New Roman', Times, serif;
+                    color: #333;
+                }
+            }
+
+            .horse {
+                position: relative;
+                top: 200px;
+                left: 250px;
+            }
+        }
+    }
+}
+
+
+.light {
+    .aboutUsPage {
+        .firstPartAbout {
+            background-color: #eabee8;
+        }
+    }
+}
+
+// RESPONSIVE
+@media only screen and(max-width:600px) {
+    .aboutUsPage {
+        .firstPartAbout {
+            .firstPartTexts {
+                h4 {
+                    width: 80%;
+                    font-size: 15px;
+                }
+
+                img {
+                    width: 100px;
+                }
+            }
+        }
+
+        .secondPartAbout {
+            .secondPartImages {
+                .mainImg {
+                    width: 400px;
+                }
+
+                .pathImg {
+                    opacity: 0;
+                }
+            }
+
+            .secondPartTexts {
+                .txts {
+                    h2 {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

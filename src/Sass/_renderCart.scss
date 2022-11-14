@@ -1,0 +1,51 @@
+.renderCart{
+    height: 100vh;
+    width: 500px;
+    background-color: #fff;
+    position: absolute;
+    right:0;
+    top: 60px;
+    color: #0a1e33;
+    font-family: "Catamaran", sans-serif;
+    img{
+        border-radius: 6px;
+    }
+    .x-icon{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+    }
+    .cartTotal{
+        position: absolute;
+        top: 20px;
+        left: 30px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .total{
+        width: 400px;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        span{
+            position: absolute;
+            right: 40px;
+        }
+    }
+   .addRemoveBtn{
+    background-color: rgb(215, 210, 210) !important;
+    font-size: 15px;
+    color: #0a1e33;
+   }
+   .price{
+    color: grey;
+   }
+   .trash{
+    font-size: 15px;
+    transition: .4s;
+    &:hover{
+        color: red;
+        transition: .4s;
+    }
+   }
+}

@@ -1,0 +1,118 @@
+{
+    "navbar": {
+        "1": "Home",
+        "2": "Blog",
+        "3": "Store",
+        "4": "About",
+        "5": "Contact",
+        "6": "Bestsellers"
+    },
+    "homePage": {
+        "1": "Loved by mums. Made for babies.",
+        "2": "Explore our products"
+    },
+    "secondPage": {
+        "1": "Spring Summer 22"
+    },
+    "thirdPage": {
+        "1": "Handmade with love in New York",
+        "2": "Designed and made in our studio in New York, our range gives little ones the confidence to explore the world whilst inspiring them through fun and colourful designs, with some style along the way.",
+        "3":"We’re committed to using the highest quality fabrics and prints and ensure they are either GOTS certifie organic or OEKO-TEX standard 100, so they are perfect for young skin."
+    },
+    "fourthPage":{
+        "1":"TRENDY NOW",
+        "2": "Shop our favorites"
+    },
+    "fifthPage":{
+        "1":"Play Debebe",
+        "2":"Our Handmade Toys",
+        "3":"Shop now"
+    },
+    "sixthPage":{
+        "1":"NEWBORN SETS",
+        "2":"The perfect gift for the newest arrivals",
+        "3":"Featuring matching hat, scratch mits and footed leggings, all presented in a gift box. Available in our gorgeously soft and colourful prints",
+        "4":"Shop now"
+    },
+    "seventhPage":{
+        "1":"Handmade in New York",
+        "2":"Our pieces are made by talented Spanish heirloom artists and seamstresses who practice the art and techniques of handmade baby and children’s clothing.",
+        "3":"Premium Quality",
+        "4":"We offer the best quality materials and textiles; attention to detail and baby's comfort always come first. We ensure every item meets premium standards.",
+        "5":"Tradition and Passion",
+        "6":"In an age of mass production, we aim to keep alive traditional craftsmanship by sharing the timeless beauty and traditions of Spanish baby and children’s clothing."
+    },
+    "eightPage":{
+        "1":"Find Us on Instagram @debebe"
+    },
+    "footer":{
+        "1":"ABOUT US",
+        "2":"Our Story",
+        "3":"Our Difference",
+        "4":"Our Services",
+        "5":"Contact",
+        "6":"SHOPPING WITH US",
+        "7":"Shop All",
+        "8":"CUSTOMER SERVICE"
+    },
+    "blog":{
+        "1":"Our Blog",
+        "2":"Keep Your Child’s Mind Active This Summer",
+        "3":"June 12, 2022",
+        "4":"Read More",
+        "5":"Bobo choses ICONIC collection",
+        "6":"Tinycottons tiny explorers",
+        "7":"Summer swim lookbook"
+    },
+    "newsletter":{
+        "1":"Newsletter",
+        "2":"Subscribe to receive updates, access to exclusive deals, and more",
+        "3":"Your Email address"
+    },
+    "store":{
+        "1":"Products",
+        "2":"Toys",
+        "3":"Girls Clothing",
+        "4":"Boys Clothing",
+        "5":"Shoes"
+    },
+    "about":{
+        "1":"About",
+        "2":"We are family. Designed in New York by Thuy ('Twee'), and made in Los Angeles by Thuy's mother, our baby and children’s clothes (“Debeb”) are comfy, fun, and stylish to wear all year round. Childhood is innocent, fun and colorful, and we believe children's clothes should be too. We create easy-peasy, simple silhouettes in natural fibers and eco-friendly fabrics with unexpected, cute, one-off details. Always special, never boring. Thuy Diep holds an M.A. in Fashion Studies from Parson’s School of Design. Her mom has been a Master Tailor for over 40 years.",
+        "3":"Our Pinky Promise",
+        "4":"At Debebe, we’re committed to quality for you + your baby. And we promise to be a source of trusted information and inspiration for all moms. Good things begin here."
+    },
+    "contact":{
+        "1": "Contact",
+        "2":"Let's have a chat",
+        "3":"Our New York Store",
+        "4":"Follow us on Instagram",
+        "5":"Follow us for advice, reviews and more",
+        "6":"CONTACT DEBEBE",
+        "7":"Get in touch",
+        "8":"Fill out the form below and we will do our best to get back to you within 48 hours!",
+        "9":"Your name",
+        "10":"Enter your name",
+        "11":"Email address",
+        "12":"Your email address",
+        "13":"Your message",
+        "14":"Send"
+    },
+    "loginPage":{
+        "1":"My Account",
+        "2":"Welcome Back",
+        "3":"Please sign in to access your full account",
+        "4":"Username",
+        "5":"Password",
+        "6":"Check me out",
+        "7":"Sign in"
+    },
+    "cart":{
+        "1":"No products in the cart.",
+        "2":"Subttoal",
+        "3":"Add to Cart"
+    },
+    "bestseller":{
+        "1":"Shop Baby Gifts Bestsellers"
+    }
+}
