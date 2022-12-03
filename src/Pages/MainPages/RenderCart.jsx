@@ -2,7 +2,6 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import { toast } from "react-toastify";
 import { useState } from "react";
-import CloseBtn from "./CloseBtn";
 import { useTranslation } from "react-i18next";
 const Cart = () => {
   const { t, i18n } = useTranslation();
@@ -14,9 +13,8 @@ const Cart = () => {
     <>
       <div className="renderCart">
         <div className="cartTotal">Cart ({totalItems})</div>
-       <CloseBtn />
         {isEmpty ? (
-          <div className="d-flex justify-content-center mt-5">
+          <div className="empty-txt d-flex justify-content-center">
             <h3 className="text-center">{t('cart.1')}</h3>
           </div>
         ) : (

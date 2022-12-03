@@ -1,0 +1,23 @@
+.wishListPage {
+    margin-top: 150px;
+    h1 {
+        color: #0a1e33;
+        font-family: 'Catamaran', sans-serif;
+    }
+}
+
+// RESPONSIVE
+
+@media only screen and(max-width:600px){
+    .wishListPage{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .favorite{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

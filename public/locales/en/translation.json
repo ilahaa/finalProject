@@ -109,8 +109,9 @@
     },
     "cart":{
         "1":"No products in the cart.",
-        "2":"Subttoal",
-        "3":"Add to Cart"
+        "2":"Subtotal",
+        "3":"Add to Cart",
+        "4":"No Products in Your Wishlist"
     },
     "bestseller":{
         "1":"Shop Baby Gifts Bestsellers"

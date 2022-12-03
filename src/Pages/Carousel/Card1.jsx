@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 
 function Card1({ item, handleClick }) {
     const { id, img, title, price } = item;
-  const { t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
     return (
         <div className='d-flex flex-column'>
             <div className="item d-flex justify-content-center flex-column">

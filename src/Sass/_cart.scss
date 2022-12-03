@@ -1,5 +1,16 @@
-.myCart{
+.renderCart{
     width: 100%;
     height: 100vh;
-    margin-top: 100px;
+    .myCart{
+        width: 100%;
+        height: 100vh;
+        margin-top: 100px;
+    }
+    .empty-txt{
+        height: 80%;
+        align-items: center;
+    }
+    .total{
+        margin-bottom: 30px;
+    }
 }

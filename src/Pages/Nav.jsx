@@ -1,14 +1,18 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useRef } from "react";
+import { Link , NavLink} from "react-router-dom";
 import Logo from "../Pages/Images/Logo-1.svg";
 import english from "../Pages/Images/english.webp";
 import azerbaijan from "../Pages/Images/azerbaijan.svg";
 import RenderCart from "../Pages/MainPages/RenderCart"
-import "../Pages/Carousel/Products";
 import { useCart } from "react-use-cart";
 import "../Pages/datas/langConfig/i18next";
 import { useTranslation } from "react-i18next";
+import Theme from "./MainPages/Theme";
 const Nav = ({ color, setColor }) => {
+  const email = useRef();
+  const password = useRef();
+  const getEmail = localStorage.getItem("emailData");
+  const getPassword = localStorage.getItem("passwordData");
   const [show, setShow] = useState(false);
   const switchColor = () => {
     setColor(color === "dark" ? "light" : "dark");
@@ -23,8 +27,14 @@ const Nav = ({ color, setColor }) => {
   const langClick = (lang) => {
     i18n.changeLanguage(lang);
   };
+  const logoutClick =()=>{
+    localStorage.clear();
+    window.location.reload();
+  }
   return (
+
     <div data-aos="fade-down" data-aos-duration="2000" className="myNavPage">
+
       <div className="background"></div>
       <nav className="navbar navbar-expand-lg container">
         <div className="container-fluid">
@@ -37,9 +47,9 @@ const Nav = ({ color, setColor }) => {
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#collapse"
-            aria-expanded="false" 
+            aria-expanded="false"
             aria-label="Toggle navigation">
-           <span className="navbar-toggler-icon" id="collapse"></span>
+            <span className="navbar-toggler-icon" id="collapse"></span>
           </button>
           <div
             className="collapse navbar-collapse mt-2"
@@ -121,19 +131,25 @@ const Nav = ({ color, setColor }) => {
                 className="ms-3"
                 alt=""
               />
-              <div onClick={switchColor} className="mode ms-3"></div>
-              <i
-                style={isActive ? { color: "red" } : { color: "black" }}
-                className={
-                  isActive
-                    ? "fa-solid fa-heart ms-3"
-                    : "fa-regular fa-heart ms-3"
-                }
-                onClick={handleClick}
-              ></i>
-              <Link to="/login">
-                <i className="changingIcon fa-regular fa-user ms-3 "></i>
-              </Link>
+              <Theme />
+              <NavLink className="ms-2" to="/wishlist">
+                <i className="myWishList fa-solid fa-heart"></i>
+              </NavLink>
+              <li className="dr-item nav-item dropdown">
+              <i className="changingIcon fa-regular fa-user ms-3 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><Link to="/login"><a className="dropdown-item" href="#">
+                    { 
+                    getEmail && getPassword ? getEmail : "Login"
+                    }
+                    </a></Link></li>
+                  <li><hr className="dropdown-divider" /></li>
+                  <li><a onClick={logoutClick} className="dropdown-item" href="#">Logout</a></li>
+                </ul>
+              </li>
+              {/* <Link to="/login">
+                <i className="changingIcon fa-regular fa-user ms-3 nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+              </Link> */}
               <div>
                 {
                   show ? <RenderCart /> : null

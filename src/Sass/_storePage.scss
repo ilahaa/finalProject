@@ -6,6 +6,7 @@
     font-family: "Catamaran", sans-serif;
     color: #0a1e33;
     .stateComponents{
+        position: relative;
         cursor: pointer;
         ul{
             li{
@@ -17,6 +18,26 @@
         h1{
             text-align: center;
         }
+        .storeProducts{
+            .item{
+        
+        .storeWishList{
+            position: absolute;
+            font-size: 20px;
+            top: 20px;
+            right: 70px;
+            color: #e46a4b;
+            opacity: 0;
+        }
+        &:hover{
+            .storeWishList{
+                transition: .8s;
+                opacity: 1;
+                transform: translateY(30%);
+            }
+        }
+    }
+}
     }
     
 }

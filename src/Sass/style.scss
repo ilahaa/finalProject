@@ -22,7 +22,19 @@
 @import 'adminLogin';
 @import 'bestsellers';
 @import 'renderCart';
+@import 'logoutPage';
+@import 'wishListPage';
+
+
+.preLoader{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
 
 .light{
     background-color: #F4DBF3;
 }
+
+

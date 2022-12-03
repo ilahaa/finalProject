@@ -108,6 +108,18 @@
   background-color: #0a1e33;
 }
 
+.addToCartItems .item .imgCon .wishList {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  opacity: 0;
+}
+
+.addToCartItems .item .imgCon .wishList i {
+  font-size: 20px;
+  color: #e46a4b;
+}
+
 .addToCartItems .item .imgCon:hover .carouselImg {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
@@ -121,6 +133,14 @@
   opacity: 1;
   -webkit-transform: translateY(-130%);
           transform: translateY(-130%);
+}
+
+.addToCartItems .item .imgCon:hover .wishList {
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 1;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
 .addToCartItems .item p {
@@ -194,10 +214,15 @@
   top: 0;
 }
 
+.dark .myNavPage .dr-item {
+  list-style: none;
+}
+
 .dark .myNavPage a {
   color: #0a1e33 !important;
   font-size: 14px !important;
   font-family: 'Catamaran', sans-serif;
+  text-decoration: none;
 }
 
 .dark .myNavPage .cartBalance {
@@ -239,6 +264,11 @@
           justify-content: center;
 }
 
+.dark .myNavPage .myWishList {
+  color: #e46a4b;
+  font-size: 20px;
+}
+
 .light .myNavPage {
   cursor: pointer;
   height: 16vh;
@@ -246,6 +276,10 @@
   position: fixed;
   z-index: 5;
   top: 0;
+}
+
+.light .myNavPage .dr-item {
+  list-style: none;
 }
 
 .light .myNavPage .background {
@@ -302,6 +336,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.light .myNavPage .myWishList {
+  color: #e46a4b;
+  font-size: 20px;
 }
 
 .MainPage {
@@ -1561,59 +1600,6 @@
   background-color: #D49CD4 !important;
 }
 
-.light .contactPage .firstPartContactPage {
-  width: 100%;
-  height: 80vh;
-  color: #0a1e33;
-  font-family: "Catamaran", sans-serif;
-}
-
-.light .contactPage .firstPartContactPage h1 {
-  font-size: 52px;
-  font-weight: 800;
-  line-height: 1em;
-}
-
-.light .contactPage .firstPartContactPage i {
-  color: #99b8ba;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.light .contactPage .firstPartContactPage i:hover {
-  -webkit-transition: .5s;
-  transition: .5s;
-  color: #e46a4b;
-}
-
-.light .contactPage .firstPartContactPage .contactTxts {
-  color: #0a1e33;
-}
-
-.light .contactPage .firstPartContactPage .contactTxts h3 a {
-  text-decoration: none;
-  color: #0a1e33;
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 1.4em;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-.light .contactPage .firstPartContactPage .contactTxts h3 a:hover {
-  -webkit-transition: .5s;
-  transition: .5s;
-  color: #e46a4b;
-}
-
-.light .contactPage .firstPartContactPage .contactTxts p,
-.light .contactPage .firstPartContactPage .contactTxts span {
-  font-size: 14px;
-  color: #5b5959;
-  line-height: 1.5em;
-  cursor: pointer;
-}
-
 .light .contactPage .imgTop {
   width: 100%;
   height: 20vh;
@@ -1623,74 +1609,16 @@
   position: relative;
 }
 
-.light .contactPage .imgTop img {
-  position: absolute;
-  bottom: 30px;
-}
-
 .light .contactPage .secondPartContactPage {
-  width: 100%;
-  height: 90vh;
   background-color: #D49CD4;
-  color: #0a1e33;
-  font-family: "Catamaran", sans-serif;
-}
-
-.light .contactPage .secondPartContactPage h6 {
-  font-size: 12px;
-  line-height: 1.3em;
-  letter-spacing: 2px;
-}
-
-.light .contactPage .secondPartContactPage h2 {
-  font-size: 36px;
-  font-weight: bold;
-  line-height: 1.2em;
-}
-
-.light .contactPage .secondPartContactPage p {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 1.5em;
-}
-
-.light .contactPage .secondPartContactPage .getInTouch label {
-  font-size: 14px;
-  line-height: 1.1em;
 }
 
 .light .contactPage .secondPartContactPage .getInTouch input {
   background-color: #EBD1ED;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 14px;
-  font-weight: 200;
-  line-height: 1.6em;
-  color: #0a1e3380;
-  height: 50px;
 }
 
 .light .contactPage .secondPartContactPage .getInTouch textarea {
   background-color: #EBD1ED;
-  height: 120px;
-}
-
-.light .contactPage .secondPartContactPage .sendBtn {
-  cursor: pointer;
-  width: 130px;
-  height: 40px;
-  background-color: #e46a4b;
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.2em;
-  border-radius: 4px;
-  -webkit-transition: all .7s;
-  transition: all .7s;
-}
-
-.light .contactPage .secondPartContactPage .sendBtn:hover {
-  -webkit-transition: all .7s;
-  transition: all .7s;
-  background-color: #0a1e33;
 }
 
 @media only screen and (max-width: 600px) {
@@ -1716,6 +1644,7 @@
 }
 
 .storePage .stateComponents {
+  position: relative;
   cursor: pointer;
 }
 
@@ -1725,6 +1654,23 @@
 
 .storePage .storeElements h1 {
   text-align: center;
+}
+
+.storePage .storeElements .storeProducts .item .storeWishList {
+  position: absolute;
+  font-size: 20px;
+  top: 20px;
+  right: 70px;
+  color: #e46a4b;
+  opacity: 0;
+}
+
+.storePage .storeElements .storeProducts .item:hover .storeWishList {
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 1;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
 @media only screen and (max-width: 600px) {
@@ -1827,10 +1773,26 @@
   }
 }
 
-.myCart {
+.renderCart {
+  width: 100%;
+  height: 100vh;
+}
+
+.renderCart .myCart {
   width: 100%;
   height: 100vh;
   margin-top: 100px;
+}
+
+.renderCart .empty-txt {
+  height: 80%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.renderCart .total {
+  margin-bottom: 30px;
 }
 
 .storeElement .item {
@@ -1873,6 +1835,18 @@
   background-color: #0a1e33;
 }
 
+.storeElement .storeImg .wishList {
+  position: absolute;
+  top: 10px;
+  right: 40px;
+  opacity: 0;
+}
+
+.storeElement .storeImg .wishList i {
+  font-size: 20px;
+  color: #e46a4b;
+}
+
 .storeElement .storeImg:hover .addtoCart {
   -webkit-transition: .8s;
   transition: .8s;
@@ -1893,6 +1867,31 @@
 .bestSellers {
   width: 100%;
   height: 100vh;
+}
+
+.storeElement {
+  position: relative;
+}
+
+.storeElement .wishList {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.storeElement .wishList i {
+  font-size: 20px;
+  color: #e46a4b;
+}
+
+.storeElement:hover .wishList {
+  -webkit-transition: .8s;
+  transition: .8s;
+  opacity: 1;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
 }
 
 .renderCart {
@@ -1956,6 +1955,66 @@
   color: red;
   -webkit-transition: .4s;
   transition: .4s;
+}
+
+.logoutPage {
+  width: 100%;
+  height: 80vh;
+  font-family: "Cataraman", sans-serif;
+}
+
+.logoutPage h1 {
+  font-size: 27px;
+}
+
+.logoutPage button {
+  border-radius: 5px;
+}
+
+.wishListPage {
+  margin-top: 150px;
+}
+
+.wishListPage h1 {
+  color: #0a1e33;
+  font-family: 'Catamaran', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  .wishListPage {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .wishListPage .favorite {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.preLoader {
+  height: 100%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .light {

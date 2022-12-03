@@ -1,5 +1,4 @@
 import React from 'react'
-import Products from '../Carousel/Products';
 import Carousel from '../Carousel/carousel';
 import { useTranslation } from 'react-i18next';
 import carousel1 from '../datas/data1';
@@ -56,7 +55,7 @@ const SecondPage = () => {
             price={item.price}
             key={index}
           />
-        ))}</OwlCarousel>
+        ))}</OwlCarousel>z
 
         </div>
 

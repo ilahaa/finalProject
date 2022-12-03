@@ -110,7 +110,8 @@
     "cart":{
         "1":"Səbətdə məhsul yoxdur.",
         "2":"Cəmi",
-        "3":"Karta əlavə et"
+        "3":"Karta əlavə et",
+        "4": "İstək siyahısında məhsul yoxdur."
     },
     "bestseller":{
         "1":"Uşaq Hədiyyələri Ən Çox Satanlar"
