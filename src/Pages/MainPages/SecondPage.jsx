@@ -55,7 +55,7 @@ const SecondPage = () => {
             price={item.price}
             key={index}
           />
-        ))}</OwlCarousel>z
+        ))}</OwlCarousel>
 
         </div>
 

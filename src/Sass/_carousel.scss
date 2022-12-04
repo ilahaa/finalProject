@@ -64,6 +64,9 @@
 
             .addtoCart {
                 position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 left: 20px;
                 bottom: 25px;
                 width: 220px;
